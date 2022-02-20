@@ -1,0 +1,2 @@
+# kazzo_script
+kazzoスクリプト
