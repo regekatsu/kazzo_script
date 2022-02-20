@@ -1,0 +1,20 @@
+board <- {
+	mappernum = 0, ppu_ramfind = false, vram_mirrorfind = true,
+	cpu_rom = {
+		size_base = 0x2000, size_max = 0x2000,
+		banksize = 0x2000
+	}, 
+	ppu_rom = {
+		size_base = 0, size_max = 0,
+		banksize = 0x2000
+	}
+};
+
+function cpu_dump(d, pagesize, banksize)
+{
+	cpu_read(d, 0xe000, 0x2000);
+}
+
+function ppu_dump(d, pagesize, banksize)
+{
+}
