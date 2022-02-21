@@ -22,9 +22,9 @@ function ppu_dump(d, pagesize, banksize)
 
 function program_initalize(d, cpu_banksize, ppu_banksize)
 {
-	cpu_command(d, 0x0000, 0x8000, cpu_banksize);
-	cpu_command(d, 0x02aa, 0xc000, cpu_banksize);
-	cpu_command(d, 0x0555, 0xc000, cpu_banksize);
+	cpu_command(d, 0x00000, 0x8000, cpu_banksize);
+	cpu_command(d, 0x02aaa, 0xa000, cpu_banksize);
+	cpu_command(d, 0x05555, 0xc000, cpu_banksize);
 }
 
 function cpu_transfer(d, start, end, cpu_banksize)
