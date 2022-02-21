@@ -1,2 +1,2 @@
 # kazzo_script
-kazzoスクリプト
+kazzo script
