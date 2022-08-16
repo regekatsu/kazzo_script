@@ -25,10 +25,6 @@ function cpu_dump(d, pagesize, banksize)
 	cpu_read(d, 0xc000, banksize);
 }
 
-/*
-UNROM/UOROM programming notice
-command address supports A10-A0 device. A14-A0 is not supported!
-*/
 function program_initalize(d, cpu_banksize, ppu_banksize)
 {
 	cpu_write(d, 0xc000, 0);
